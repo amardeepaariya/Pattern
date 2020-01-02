@@ -3,7 +3,7 @@
 */
 
 import java.util.Scanner;
-     class Patern1
+     class Pattern2
 	 {
 		 public static void main(String[] args)
 		 {
