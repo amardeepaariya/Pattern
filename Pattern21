@@ -1,0 +1,39 @@
+/*
+AMARDEEP
+
+
+A
+A M
+A M A
+A M A R
+A M A R D
+A M A R D E
+A M A R D E E
+A M A R D E E P
+
+*/
+import java.util.Scanner;
+     class Pattern21
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the NAME ...");
+			 String s=sc.next();
+			 
+			 pattern(s);
+		 }
+		 
+		 
+		 static void pattern(String s)
+		 {
+			 for(int i=0;i<s.length();i++)
+			 {
+				 for(int j=0;j<=i;j++)
+				 {
+					 System.out.print(s.charAt(j)+" ");
+				 }
+				 System.out.println();
+			 }
+		 }
+	 }
