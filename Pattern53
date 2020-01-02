@@ -1,0 +1,41 @@
+/*
+
+
+* * * * * * * * *
+* * * *   * * * *
+* * *       * * *
+* *           * *
+*               *
+
+*/
+
+
+import java.util.Scanner;
+     class Pattern53
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the terms.....");
+			 int n=sc.nextInt();
+			 
+			int i,j;
+			for(i=n;i>=1;i--)
+			{
+				for(j=i;j>=1;j--)
+				{
+					System.out.print("* ");
+				}
+				for(j=1;j<2*n-2*i;j++)
+				{
+				 System.out.print("  ");
+				}
+				for(j=1;j<=i;j++)
+				{
+					if(j<n)
+					System.out.print("* ");
+				}
+				System.out.println();
+			}
+		 }
+	 }
