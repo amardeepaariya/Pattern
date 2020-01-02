@@ -1,0 +1,26 @@
+/*
+1 3 6 10 15 21 28 36 45 55 ....
+*/
+
+import java.util.Scanner;
+     class Patern1
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the Number... ");
+			 int n=sc.nextInt();
+			 
+			 patern(n);
+		 }
+		 
+		 static void patern(int n)
+		 {
+			 int sum=0;
+			 for(int i=1;i<=n;i++)
+			 {
+				 sum=sum+i;
+				 System.out.print(sum+" ");
+			 }
+		 }
+	 }
