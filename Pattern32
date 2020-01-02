@@ -1,0 +1,36 @@
+/*
+
+*
+* *
+* * *
+* *
+*
+
+*/import java.util.Scanner;
+     class Pattern32
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the number the terms...");
+			 int n=sc.nextInt();
+			 
+			 pattern(n);
+		 }
+		 
+		 
+		 static void pattern(int n)
+		 {
+			 int k=0;
+			 for(int i=1;i<=n+1;i++)
+			 {
+				int b= i<=((n+1)/2)?k++:k--;
+				 for(int j=1;j<=n+1/2;j++)
+				 {
+					 if(j<=b)
+					 System.out.print("* ");
+				 }
+				 System.out.println();
+			 }
+		 }
+	 }
