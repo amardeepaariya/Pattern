@@ -1,0 +1,43 @@
+/*
+AMARDEEP
+
+A
+M A
+A R D
+R D E E
+D E E P K
+E E P K
+E P K
+P K
+K
+*/
+
+
+import java.util.Scanner;
+     class Pattern34
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the CHARACTER...");
+			 String s=sc.next();
+			 
+			 pattern(s);
+		 }
+		 
+		 
+		 static void pattern(String s)
+		 {
+			 
+			 for(int i=1;i<=s.length();i++)
+			 {
+				 for(int j=i;j<2*i;j++)
+				 {
+					 System.out.print(s.charAt(j-1)+" ");
+					 if(j==s.length())
+						 break;
+				 }
+				 System.out.println();
+			 }
+		 }
+	 }
